@@ -138,7 +138,7 @@ function initNavigation() {
   if (!nav || !navToggle || !navLinks) return;
 
   // Scroll-based nav styling
-  let lastScroll = 0;
+  
   window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
 
@@ -148,7 +148,7 @@ function initNavigation() {
       nav.classList.remove('scrolled');
     }
 
-    lastScroll = currentScroll;
+  
 
     // Update active link
     updateActiveNavLink();
