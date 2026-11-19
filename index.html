@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE BAG EDIT — Carrying Stories, Creating Statements</title>
+    <meta name="description" content="A luxury fashion editorial blog dedicated to exploring the world of handbags — their history, evolution, craftsmanship, iconic brands, and contemporary trends." />
+    <meta name="keywords" content="handbags, luxury bags, fashion editorial, designer bags, bag history, iconic bags" />
+    <meta property="og:title" content="THE BAG EDIT — Carrying Stories, Creating Statements" />
+    <meta property="og:description" content="Discover the fascinating world of handbags, where design meets functionality and every silhouette tells a story." />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="loader-logo">THE BAG EDIT</div>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        <div class="loader-tagline">Carrying Stories, Creating Statements.</div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="main-nav">
+      <div class="nav-logo" id="nav-logo">
+        <span class="nav-logo-text">THE BAG EDIT</span>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-section="home">Home</a></li>
+        <li><a href="#history" data-section="history">History</a></li>
+        <li><a href="#dictionary" data-section="dictionary">Dictionary</a></li>
+        <li><a href="#materials" data-section="materials">Materials</a></li>
+        <li><a href="#hall-of-fame" data-section="hall-of-fame">Hall of Fame</a></li>
+        <li><a href="#brands" data-section="brands">Brands</a></li>
+        <li><a href="#indian" data-section="indian">Desi Craft</a></li>
+        <li><a href="#consumer" data-section="consumer">Consumer</a></li>
+        <li><a href="#future" data-section="future">Future</a></li>
+        <li><a href="#finale" data-section="finale">Finale</a></li>
+      </ul>
+      <button class="nav-search-btn" id="nav-search-btn" aria-label="Open search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+      <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+      <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Search THE BAG EDIT..." autocomplete="off" />
+        <div class="search-results" id="search-results"></div>
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar" id="social-sidebar">
+      <a href="#" class="social-link" aria-label="Share on Instagram" data-tooltip="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Share on Pinterest" data-tooltip="Pinterest">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Share on Twitter" data-tooltip="Twitter">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Share on Facebook" data-tooltip="Facebook">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+    </div>
+
+    <!-- ===================== PAGE 1: HOME / COVER ===================== -->
+    <section id="home" class="section section-home">
+      <div class="hero">
+        <div class="hero-bg">
+          <img src="/images/hero_banner.png" alt="Luxury handbag collection" class="hero-bg-img" />
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-badge">EST. 2024 &bull; FASHION EDITORIAL</div>
+          <h1 class="hero-title">
+            <span class="hero-title-line hero-title-the">THE</span>
+            <span class="hero-title-line hero-title-bag">BAG</span>
+            <span class="hero-title-line hero-title-edit">EDIT</span>
+          </h1>
+          <p class="hero-tagline">Carrying Stories, Creating Statements.</p>
+          <p class="hero-subtitle">A journey through style, function and fashion.</p>
+          <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Introduction -->
+      <div class="home-intro">
+        <div class="container">
+          <div class="intro-content" data-animate="fade-up">
+            <div class="intro-ornament">✦</div>
+            <blockquote class="intro-quote">
+              "From everyday essentials to symbols of luxury, bags have travelled a long way. Discover the fascinating world of handbags, where design meets functionality and every silhouette tells a story."
+            </blockquote>
+            <div class="intro-ornament">✦</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapter Navigation -->
+      <div class="chapter-nav">
+        <div class="container">
+          <h2 class="section-label" data-animate="fade-up">EXPLORE THE CHAPTERS</h2>
+          <div class="chapter-grid" data-animate="stagger-up">
+            <a href="#history" class="chapter-card" data-chapter="01">
+              <span class="chapter-number">01</span>
+              <span class="chapter-title">Once Upon a Bag</span>
+              <span class="chapter-desc">The history & evolution</span>
+            </a>
+            <a href="#dictionary" class="chapter-card" data-chapter="02">
+              <span class="chapter-number">02</span>
+              <span class="chapter-title">The Bag Dictionary</span>
+              <span class="chapter-desc">Types & silhouettes</span>
+            </a>
+            <a href="#materials" class="chapter-card" data-chapter="03">
+              <span class="chapter-number">03</span>
+              <span class="chapter-title">The Material Story</span>
+              <span class="chapter-desc">Textures & fabrics</span>
+            </a>
+            <a href="#hall-of-fame" class="chapter-card" data-chapter="04">
+              <span class="chapter-number">04</span>
+              <span class="chapter-title">Hall of Fame</span>
+              <span class="chapter-desc">Iconic legendary bags</span>
+            </a>
+            <a href="#brands" class="chapter-card" data-chapter="05">
+              <span class="chapter-number">05</span>
+              <span class="chapter-title">The Brands</span>
+              <span class="chapter-desc">Names behind the bags</span>
+            </a>
+            <a href="#indian" class="chapter-card" data-chapter="06">
+              <span class="chapter-number">06</span>
+              <span class="chapter-title">Desi Craft</span>
+              <span class="chapter-desc">Indian artistry</span>
+            </a>
+            <a href="#consumer" class="chapter-card" data-chapter="07">
+              <span class="chapter-number">07</span>
+              <span class="chapter-title">The Consumer</span>
+              <span class="chapter-desc">Style & personality</span>
+            </a>
+            <a href="#future" class="chapter-card" data-chapter="08">
+              <span class="chapter-number">08</span>
+              <span class="chapter-title">Future of Bags</span>
+              <span class="chapter-desc">Beyond trends</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 2: ONCE UPON A BAG ===================== -->
+    <section id="history" class="section section-history">
+      <div class="section-hero">
+        <img src="/images/history_bags.png" alt="Vintage bag collection" class="section-hero-img" />
+        <div class="section-hero-overlay"></div>
+        <div class="section-hero-content">
+          <span class="section-chapter-num">Chapter 01</span>
+          <h2 class="section-hero-title">Once Upon a Bag</h2>
+          <p class="section-hero-subtitle">Before Fashion, There Was Function.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="editorial-content" data-animate="fade-up">
+          <div class="editorial-dropcap">
+            <p><span class="dropcap">L</span>ong before handbags became fashion accessories, they were tools of survival. Early humans fashioned pouches from animal hides and plant fibers to carry food, tools, and medicinal herbs. These simple containers were among humanity's first inventions — born from pure necessity.</p>
+          </div>
+          <p>As civilisations evolved, so did the craft of carrying things. In ancient Egypt, men and women tied pouches to their waists. Medieval Europeans carried drawstring bags called "purses" or "pockets," often hidden beneath layers of clothing. During the Renaissance, ornate pouches became status symbols, embroidered with gold thread and precious stones.</p>
+
+          <div class="editorial-pullquote" data-animate="fade-up">
+            <blockquote>"The bag was never just a bag — it was a reflection of the society that created it."</blockquote>
+          </div>
+
+          <p>The true revolution came in the late 18th century when women's fashion shifted towards slimmer silhouettes. With pockets disappearing from gowns, the <em>reticule</em> was born — a small decorative handbag carried in the hand. This was the first time bags emerged as visible fashion accessories rather than hidden utility items.</p>
+
+          <p>The 19th century brought the era of travel and industrialisation. Luxury houses like Louis Vuitton (founded 1854) and Hermès (founded 1837) began creating travel trunks and leather goods, laying the foundation for the modern luxury handbag industry.</p>
+
+          <p>By the 20th century, bags had become inseparable from fashion identity. Coco Chanel introduced the quilted chain-strap bag in 1955. The Hermès Birkin was born on a flight in 1984. Each decade brought new silhouettes, new materials, and new ways of carrying — from the structured Kelly to the slouchy hobo, from the miniature micro-bag to the oversized tote.</p>
+        </div>
+
+        <!-- Fashion Vocabulary -->
+        <div class="vocab-section" data-animate="fade-up">
+          <h3 class="vocab-title">Fashion Vocabulary</h3>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-term">Reticule</div>
+              <div class="vocab-def">A small, ornamental handbag with a drawstring, carried by women from the late 18th century. The original fashion handbag.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Silhouette</div>
+              <div class="vocab-def">The overall shape or outline of a bag's design. It defines the bag's visual identity and category.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Utility</div>
+              <div class="vocab-def">The practical functionality of a bag — its capacity, compartments, and everyday usability.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Aesthetic</div>
+              <div class="vocab-def">The visual and artistic character of a design. A bag's aesthetic reflects its era, culture, and designer's vision.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 3: THE BAG DICTIONARY ===================== -->
+    <section id="dictionary" class="section section-dictionary">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-chapter-num">Chapter 02</span>
+        <h2 class="section-title">The Bag Dictionary</h2>
+        <p class="section-subtitle">Different Shapes, Different Personalities.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="container">
+        <p class="section-intro-text" data-animate="fade-up">Every handbag has its own character, its own purpose, its own moment. From the spacious tote that accompanies your workday to the delicate clutch that completes your evening look — here is your guide to the world of bag silhouettes.</p>
+
+        <div class="bag-dictionary-grid" data-animate="stagger-up">
+          <div class="bag-dict-card" id="bag-tote">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/tote_bag.png" alt="Tote Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Everyday Essential</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Tote Bag</h3>
+              <p>The ultimate carry-all. A large, open-top bag with two parallel handles, designed for those who need space without sacrificing style. From beach to boardroom, the tote adapts to every setting.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-shoulder">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/shoulder_bag.png" alt="Shoulder Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Classic Companion</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Shoulder Bag</h3>
+              <p>The hands-free classic. A versatile bag with a single or double strap designed to sit comfortably on the shoulder. The go-to for everyday elegance and effortless style.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-sling">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/sling_bag.png" alt="Sling Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Casual Chic</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Sling Bag</h3>
+              <p>The modern explorer's choice. A compact bag worn diagonally across the body, offering hands-free convenience with a sporty, contemporary edge.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-clutch">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/clutch_bag.png" alt="Clutch" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Evening Star</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Clutch</h3>
+              <p>The epitome of evening glamour. A small, strapless bag designed to be held in the hand or tucked under the arm. The clutch is the finishing touch to formal and cocktail ensembles.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-hobo">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/hobo_bag.png" alt="Hobo Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Bohemian Spirit</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Hobo Bag</h3>
+              <p>The free-spirited slouch. A crescent-shaped bag with a single strap, characterised by its soft, unstructured silhouette. It drapes over the shoulder with effortless bohemian charm.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-satchel">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/satchel_bag.png" alt="Satchel" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Heritage Classic</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Satchel</h3>
+              <p>The scholar's favourite. A structured bag with a flat bottom, top handle, and a front flap closure. Originally designed for carrying books, now a timeless symbol of polished, heritage style.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-bucket">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/bucket_bag.png" alt="Bucket Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Modern Icon</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Bucket Bag</h3>
+              <p>The relaxed sophisticate. A cylindrical or trapezoidal bag with a drawstring or cinched closure. Its distinctive shape bridges the gap between casual and refined.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-mini">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/mini_bag.png" alt="Mini Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Tiny Statement</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Mini Bag</h3>
+              <p>The adorable statement piece. A micro-sized bag that carries just the essentials — phone, card, lip colour. What it lacks in space, it makes up for in personality and photo-worthiness.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-baguette">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/baguette_bag.png" alt="Baguette Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Fashion Icon</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Baguette Bag</h3>
+              <p>The It-Girl essential. A compact, elongated bag tucked under the arm like a French baguette. Made iconic by Fendi and pop culture, it remains a symbol of understated fashion confidence.</p>
+            </div>
+          </div>
+          <div class="bag-dict-card" id="bag-crossbody">
+            <div class="bag-dict-img-wrap">
+              <img src="/images/crossbody_bag.png" alt="Crossbody Bag" loading="lazy" />
+              <div class="bag-dict-overlay">
+                <span class="bag-dict-tag">Urban Essential</span>
+              </div>
+            </div>
+            <div class="bag-dict-info">
+              <h3>Crossbody Bag</h3>
+              <p>The urban explorer. A hands-free bag worn across the body with a long, adjustable strap. Perfect for city life, travel, and anyone who values freedom of movement without compromising style.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 4: THE MATERIAL STORY ===================== -->
+    <section id="materials" class="section section-materials">
+      <div class="section-hero section-hero-dark">
+        <div class="section-hero-pattern"></div>
+        <div class="section-hero-content">
+          <span class="section-chapter-num">Chapter 03</span>
+          <h2 class="section-hero-title">The Material Story</h2>
+          <p class="section-hero-subtitle">It's All in the Texture.</p>
+        </div>
+      </div>
+      <div class="container">
+        <p class="section-intro-text" data-animate="fade-up">What makes a bag feel luxurious in your hands? The answer lies in its material. From the supple warmth of full-grain leather to the earthy charm of jute, every material tells its own story of origin, craft, and character.</p>
+
+        <div class="materials-showcase" data-animate="stagger-up">
+          <div class="material-card material-card-featured">
+            <div class="material-img-wrap">
+              <img src="/images/leather_texture.png" alt="Leather texture close-up" loading="lazy" />
+            </div>
+            <div class="material-info">
+              <h3>Leather</h3>
+              <p>The gold standard of luxury bags. Full-grain leather develops a beautiful patina over time, becoming more characterful with age. From smooth calfskin to textured pebbled leather, it offers unmatched durability and sophistication. The most sought-after bags in the world are made from premium leather.</p>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-img-wrap">
+              <img src="/images/suede_texture.png" alt="Suede texture close-up" loading="lazy" />
+            </div>
+            <div class="material-info">
+              <h3>Suede</h3>
+              <p>The velvety touch of understated luxury. Made from the inner surface of leather, suede has a soft nap that catches light beautifully. While more delicate than full-grain leather, its rich, tactile quality makes it a favourite for bohemian and autumn-inspired designs.</p>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-img-wrap">
+              <img src="/images/canvas_texture.png" alt="Canvas texture close-up" loading="lazy" />
+            </div>
+            <div class="material-info">
+              <h3>Canvas</h3>
+              <p>The workhorse of casual elegance. Durable, lightweight, and endlessly versatile, canvas has been used by heritage brands for over a century. Coated canvas, in particular, became the signature material for many iconic monogrammed designs.</p>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-img-wrap">
+              <img src="/images/denim_texture.png" alt="Denim texture close-up" loading="lazy" />
+            </div>
+            <div class="material-info">
+              <h3>Denim</h3>
+              <p>The rebel of the bag world. Originally workwear fabric, denim has been reimagined by designers into edgy, contemporary handbags. Its indigo tones and casual character bring a street-style energy to any collection.</p>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-img-wrap">
+              <img src="/images/raffia_texture.png" alt="Raffia texture close-up" loading="lazy" />
+            </div>
+            <div class="material-info">
+              <h3>Raffia</h3>
+              <p>Nature's weave. Made from palm fibers, raffia brings an organic, artisanal quality to bags. Its warm, golden tones and handwoven texture evoke tropical beaches and Mediterranean summers. A favourite for resort and vacation styles.</p>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-img-wrap material-placeholder" data-material="satin">
+              <div class="material-swatch material-swatch-satin"></div>
+            </div>
+            <div class="material-info">
+              <h3>Satin</h3>
+              <p>The fabric of celebrations. With its lustrous sheen and smooth, flowing drape, satin is the material of choice for evening bags and clutches. It catches light like liquid silk, adding a touch of glamour to formal occasions.</p>
+            </div>
+          </div>
+          <div class="material-card">
+            <div class="material-img-wrap material-placeholder" data-material="jute">
+              <div class="material-swatch material-swatch-jute"></div>
+            </div>
+            <div class="material-info">
+              <h3>Jute</h3>
+              <p>The sustainable classic. One of the most eco-friendly natural fibers, jute brings a rustic, earth-conscious charm to bags. Its coarse, sturdy texture has found new appreciation in the age of conscious fashion.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material Vocabulary -->
+        <div class="vocab-section vocab-section-dark" data-animate="fade-up">
+          <h3 class="vocab-title">Material Vocabulary</h3>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-term">Grain</div>
+              <div class="vocab-def">The natural surface texture of leather. Full-grain retains the original surface, while top-grain is lightly sanded for uniformity.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Texture</div>
+              <div class="vocab-def">The tactile quality of a material — how it feels to the touch. Embossing, quilting, and weaving all create distinctive textures.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Lining</div>
+              <div class="vocab-def">The interior fabric of a bag. Premium bags use suede, cotton, or microfiber linings, often in signature colours or patterns.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Gusset</div>
+              <div class="vocab-def">The expandable side panel of a bag that determines its depth and capacity. Wider gussets allow more storage.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Hardware</div>
+              <div class="vocab-def">The metal components — clasps, buckles, zippers, studs, and feet. Gold, silver, palladium, and brushed brass each create a different aesthetic.</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-term">Topstitching</div>
+              <div class="vocab-def">The visible decorative stitching on the surface of a bag. Quality topstitching is even, consistent, and a hallmark of fine craftsmanship.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 5: HALL OF FAME ===================== -->
+    <section id="hall-of-fame" class="section section-hall-of-fame">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-chapter-num">Chapter 04</span>
+        <h2 class="section-title">The Iconic Bag Hall of Fame</h2>
+        <p class="section-subtitle">Bags That Became Legends.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="container">
+        <p class="section-intro-text" data-animate="fade-up">Some bags transcend fashion seasons. They become cultural icons, investment pieces, and objects of desire that define entire eras. Welcome to the Hall of Fame — a curated gallery of the most legendary handbags ever created.</p>
+
+        <div class="hof-gallery" data-animate="stagger-up">
+          <div class="hof-card" id="hof-birkin">
+            <div class="hof-card-inner">
+              <div class="hof-img-wrap">
+                <img src="/images/iconic_birkin.png" alt="Hermès Birkin bag" loading="lazy" />
+                <div class="hof-badge">Icon</div>
+              </div>
+              <div class="hof-info">
+                <span class="hof-brand">Hermès</span>
+                <h3 class="hof-name">The Birkin</h3>
+                <p class="hof-desc">Born from a chance encounter between Jean-Louis Dumas and Jane Birkin on a flight in 1984, the Birkin is arguably the most coveted bag in history. With a waiting list that once stretched for years, hand-stitched by a single artisan over 18-48 hours, it's the ultimate symbol of exclusivity. Its structured silhouette, signature lock, and clochette have remained unchanged — a testament to timeless perfection.</p>
+                <div class="hof-features">
+                  <span>Hand-stitched</span>
+                  <span>Saddle-stitch technique</span>
+                  <span>Investment piece</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hof-card" id="hof-chanel">
+            <div class="hof-card-inner">
+              <div class="hof-img-wrap">
+                <img src="/images/iconic_flap.png" alt="Chanel Classic Flap bag" loading="lazy" />
+                <div class="hof-badge">Icon</div>
+              </div>
+              <div class="hof-info">
+                <span class="hof-brand">Chanel</span>
+                <h3 class="hof-name">The Classic Flap</h3>
+                <p class="hof-desc">In February 1955, Coco Chanel revolutionised fashion by introducing a bag with a chain strap — freeing women's hands for the first time. The quilted diamond pattern, the interlocking CC clasp, and the burgundy leather lining became hallmarks of understated Parisian elegance. Known as the 2.55, it remains one of the most recognised bags in the world.</p>
+                <div class="hof-features">
+                  <span>Quilted lambskin</span>
+                  <span>Chain strap</span>
+                  <span>Burgundy lining</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hof-card" id="hof-speedy">
+            <div class="hof-card-inner">
+              <div class="hof-img-wrap">
+                <img src="/images/iconic_speedy.png" alt="Louis Vuitton Speedy bag" loading="lazy" />
+                <div class="hof-badge">Icon</div>
+              </div>
+              <div class="hof-info">
+                <span class="hof-brand">Louis Vuitton</span>
+                <h3 class="hof-name">The Speedy</h3>
+                <p class="hof-desc">Originally created in 1930 as a compact travel bag, the Speedy gained icon status when Audrey Hepburn reportedly asked Louis Vuitton to create a smaller version. Its rounded rectangular shape, coated canvas body, and leather trim make it instantly recognisable. The Speedy democratised luxury — it's one of the most accessible entry points into the world of designer bags.</p>
+                <div class="hof-features">
+                  <span>Monogram canvas</span>
+                  <span>Padlock detail</span>
+                  <span>Versatile sizes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hof-card" id="hof-ladydior">
+            <div class="hof-card-inner">
+              <div class="hof-img-wrap">
+                <img src="/images/iconic_ladydior.png" alt="Dior Lady Dior bag" loading="lazy" />
+                <div class="hof-badge">Icon</div>
+              </div>
+              <div class="hof-info">
+                <span class="hof-brand">Dior</span>
+                <h3 class="hof-name">The Lady Dior</h3>
+                <p class="hof-desc">Originally named "Chouchou," this bag was renamed after Princess Diana fell in love with it in 1995, when the French First Lady gifted her one. The Cannage quilting pattern, the structured square shape, and the hanging D-I-O-R charm letters make it one of the most elegant bags ever designed. It embodies Parisian grace and royal pedigree.</p>
+                <div class="hof-features">
+                  <span>Cannage pattern</span>
+                  <span>DIOR charms</span>
+                  <span>Royal heritage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hof-card" id="hof-baguette">
+            <div class="hof-card-inner">
+              <div class="hof-img-wrap">
+                <img src="/images/baguette_bag.png" alt="Fendi Baguette bag" loading="lazy" />
+                <div class="hof-badge">Icon</div>
+              </div>
+              <div class="hof-info">
+                <span class="hof-brand">Fendi</span>
+                <h3 class="hof-name">The Baguette</h3>
+                <p class="hof-desc">Designed by Silvia Venturini Fendi in 1997, the Baguette became the first "It Bag" — a term coined largely because of its cultural impact. Tucked under the arm like a French baguette, it was catapulted to fame by Carrie Bradshaw in Sex and the City. Available in thousands of variations, it proved that a bag could be both a fashion statement and a pop-culture moment.</p>
+                <div class="hof-features">
+                  <span>Compact shape</span>
+                  <span>Under-arm carry</span>
+                  <span>Pop-culture icon</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hof-card" id="hof-jackie">
+            <div class="hof-card-inner">
+              <div class="hof-img-wrap">
+                <img src="/images/hobo_bag.png" alt="Gucci Jackie bag" loading="lazy" />
+                <div class="hof-badge">Icon</div>
+              </div>
+              <div class="hof-info">
+                <span class="hof-brand">Gucci</span>
+                <h3 class="hof-name">The Jackie</h3>
+                <p class="hof-desc">Originally called the "Constance" and later the "Fifties Hobo," this bag was renamed after Jackie Kennedy Onassis was repeatedly photographed carrying it in the 1960s and 70s. Its slouchy crescent shape and signature piston-lock closure epitomise effortless elegance. Revived multiple times by Gucci, the Jackie remains a symbol of quiet, understated chic.</p>
+                <div class="hof-features">
+                  <span>Piston-lock closure</span>
+                  <span>Crescent shape</span>
+                  <span>Jackie O legacy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 6: THE BRANDS ===================== -->
+    <section id="brands" class="section section-brands">
+      <div class="section-hero section-hero-brands">
+        <img src="/images/brand_luxury.png" alt="Luxury fashion accessories" class="section-hero-img" />
+        <div class="section-hero-overlay"></div>
+        <div class="section-hero-content">
+          <span class="section-chapter-num">Chapter 05</span>
+          <h2 class="section-hero-title">The Brands Behind the Bags</h2>
+          <p class="section-hero-subtitle">The Names That Define Luxury.</p>
+        </div>
+      </div>
+      <div class="container">
+        <p class="section-intro-text" data-animate="fade-up">Behind every legendary bag is a brand with a story — of visionary founders, uncompromising craftsmanship, and a relentless pursuit of beauty. These are the houses that turned leather and thread into objects of desire.</p>
+
+        <div class="brands-grid" data-animate="stagger-up">
+          <div class="brand-card">
+            <div class="brand-initial">C</div>
+            <h3 class="brand-name">Chanel</h3>
+            <p class="brand-identity">Founded by Gabrielle "Coco" Chanel in 1910, Chanel redefined femininity in fashion. The house is synonymous with quilted leather, interlocking CC logos, and the timeless 2.55 flap bag.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Classic Flap, Boy Bag, Gabrielle</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">H</div>
+            <h3 class="brand-name">Hermès</h3>
+            <p class="brand-identity">Beginning as a harness workshop in 1837, Hermès evolved into the pinnacle of luxury craftsmanship. Each bag is hand-stitched by a single artisan, and the Birkin remains the most exclusive bag in the world.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Birkin, Kelly, Constance</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">LV</div>
+            <h3 class="brand-name">Louis Vuitton</h3>
+            <p class="brand-identity">Founded in 1854 as a trunk maker, Louis Vuitton's monogram canvas became one of the most recognised patterns in fashion. The house bridges heritage craftsmanship with contemporary culture.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Speedy, Neverfull, Alma</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">G</div>
+            <h3 class="brand-name">Gucci</h3>
+            <p class="brand-identity">From Florence in 1921, Gucci brought Italian glamour to the world. Under creative directors from Tom Ford to Alessandro Michele, the house has continually redefined maximalist luxury.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Jackie, Dionysus, Bamboo</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">P</div>
+            <h3 class="brand-name">Prada</h3>
+            <p class="brand-identity">Miuccia Prada transformed her grandfather's leather goods shop into a global symbol of intellectual fashion. The nylon backpack of 1984 challenged luxury conventions and redefined cool.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Re-Edition, Galleria, Cahier</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">D</div>
+            <h3 class="brand-name">Dior</h3>
+            <p class="brand-identity">Christian Dior launched his house in 1946 with the revolutionary "New Look." The Lady Dior bag, with its Cannage quilting and hanging charms, became a symbol of Parisian haute couture elegance.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Lady Dior, Saddle, Book Tote</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">F</div>
+            <h3 class="brand-name">Fendi</h3>
+            <p class="brand-identity">Founded in Rome in 1925, Fendi is a family-driven house known for fur expertise and innovative design. The Baguette bag became the first "It Bag" and a pop-culture phenomenon.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Baguette, Peekaboo, Kan I</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">BV</div>
+            <h3 class="brand-name">Bottega Veneta</h3>
+            <p class="brand-identity">"When your own initials are enough." Bottega Veneta's signature intrecciato leather weave speaks louder than any logo. Under Daniel Lee, the Pouch and Cassette became new-generation icons.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Pouch, Cassette, Jodie</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">Co</div>
+            <h3 class="brand-name">Coach</h3>
+            <p class="brand-identity">Born in a Manhattan loft in 1941, Coach made quality leather goods accessible to a broader audience. Under Stuart Vevers, the brand has evolved into a modern American house with a playful, youthful spirit.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Tabby, Rogue, Pillow Tabby</span>
+            </div>
+          </div>
+          <div class="brand-card">
+            <div class="brand-initial">SL</div>
+            <h3 class="brand-name">Saint Laurent</h3>
+            <p class="brand-identity">Yves Saint Laurent dressed women in power and rebellion. The house's bags — sleek, structured, and unapologetically Parisian — embody a rock-chic sensibility that feels effortlessly modern.</p>
+            <div class="brand-signature">
+              <span class="brand-sig-label">Signature Bags:</span>
+              <span>Sac de Jour, Lou Lou, Kate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 7: DESI CRAFT ===================== -->
+    <section id="indian" class="section section-indian">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-chapter-num">Chapter 06</span>
+        <h2 class="section-title">Desi Craft, Global Style</h2>
+        <p class="section-subtitle">Indian Bags and Designers.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="container">
+        <p class="section-intro-text" data-animate="fade-up">India's relationship with bags is woven into centuries of textile tradition, embroidery artistry, and cultural symbolism. From the ornate potli of royal courts to contemporary leather goods that rival global luxury houses — Indian bag design is a world of colour, craft, and character.</p>
+
+        <div class="indian-brands-grid" data-animate="stagger-up">
+          <div class="indian-brand-card">
+            <div class="indian-brand-header">
+              <h3>Sabyasachi</h3>
+              <span class="indian-brand-tag">Heritage Luxury</span>
+            </div>
+            <p>Sabyasachi Mukherjee has created a universe where Indian heritage meets global luxury. His bags feature intricate embroidery, Bengal tiger motifs, and rich textiles. The brand's collaboration with global platforms has brought Indian craft to the world stage.</p>
+          </div>
+          <div class="indian-brand-card">
+            <div class="indian-brand-header">
+              <h3>Hidesign</h3>
+              <span class="indian-brand-tag">Eco-Luxury Leather</span>
+            </div>
+            <p>Founded in Pondicherry in 1978, Hidesign pioneered vegetable-tanned leather in India. Known for their eco-conscious approach, their bags combine European craftsmanship techniques with an Indian sensibility for colour and design.</p>
+          </div>
+          <div class="indian-brand-card">
+            <div class="indian-brand-header">
+              <h3>Nappa Dori</h3>
+              <span class="indian-brand-tag">Modern Indian Design</span>
+            </div>
+            <p>Founded by Gautam Sinha, Nappa Dori blends Indian artisanal leather craft with contemporary, minimalist design. Their clean lines and distinctive tan leather have created a unique design language that's distinctly Indian yet globally appealing.</p>
+          </div>
+          <div class="indian-brand-card">
+            <div class="indian-brand-header">
+              <h3>Da Milano</h3>
+              <span class="indian-brand-tag">Italian-Indian Fusion</span>
+            </div>
+            <p>Blending Italian design with Indian manufacturing excellence, Da Milano has become a leading premium leather brand in India. Known for their structured bags, fine leather quality, and accessible luxury positioning.</p>
+          </div>
+        </div>
+
+        <!-- Traditional Indian Bag Styles -->
+        <div class="indian-traditional" data-animate="fade-up">
+          <h3 class="subsection-title">Traditional Indian Bag Styles</h3>
+          <div class="indian-styles-grid">
+            <div class="indian-style-card">
+              <div class="indian-style-img">
+                <img src="/images/indian_bags.png" alt="Traditional Indian bags" loading="lazy" />
+              </div>
+            </div>
+            <div class="indian-style-info">
+              <div class="indian-style-item">
+                <h4>Potli</h4>
+                <p>The quintessential Indian drawstring bag, traditionally made from silk or brocade with heavy embroidery. Once a staple of royal courts, the potli remains essential for weddings and festive occasions.</p>
+              </div>
+              <div class="indian-style-item">
+                <h4>Batwa</h4>
+                <p>A small, ornate pouch traditionally used to carry betel leaves, coins, or personal items. Often embellished with zardozi (metallic embroidery) and semi-precious stones.</p>
+              </div>
+              <div class="indian-style-item">
+                <h4>Embroidered Clutches</h4>
+                <p>Showcasing India's vast embroidery traditions — from Kashmiri chain stitch to Lucknowi chikan, from Rajasthani mirror work to Gujarati bandhani — these clutches are wearable art.</p>
+              </div>
+              <div class="indian-style-item">
+                <h4>Jute Bags</h4>
+                <p>India is the world's largest producer of jute. Bengali jute bags, often adorned with block prints or Kantha embroidery, represent sustainable style rooted in Indian textile heritage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indian Craft Techniques -->
+        <div class="indian-craft" data-animate="fade-up">
+          <h3 class="subsection-title">The Art of Indian Craftsmanship</h3>
+          <div class="craft-tags">
+            <span class="craft-tag">Embroidery</span>
+            <span class="craft-tag">Mirror Work</span>
+            <span class="craft-tag">Weaving</span>
+            <span class="craft-tag">Appliqué</span>
+            <span class="craft-tag">Zardozi</span>
+            <span class="craft-tag">Block Printing</span>
+            <span class="craft-tag">Kantha Stitch</span>
+            <span class="craft-tag">Bandhani</span>
+            <span class="craft-tag">Phulkari</span>
+            <span class="craft-tag">Chikan Work</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 8: THE BAG CONSUMER ===================== -->
+    <section id="consumer" class="section section-consumer">
+      <div class="section-hero">
+        <img src="/images/consumer_fashion.png" alt="Fashion consumer street style" class="section-hero-img" />
+        <div class="section-hero-overlay"></div>
+        <div class="section-hero-content">
+          <span class="section-chapter-num">Chapter 07</span>
+          <h2 class="section-hero-title">The Bag Consumer</h2>
+          <p class="section-hero-subtitle">Tell Me Your Bag, I'll Tell You Your Style.</p>
+        </div>
+      </div>
+      <div class="container">
+        <p class="section-intro-text" data-animate="fade-up">Every bag choice is a window into someone's lifestyle, personality, and values. Understanding the bag consumer means understanding the intersection of fashion psychology, lifestyle needs, and personal identity.</p>
+
+        <div class="consumer-grid" data-animate="stagger-up">
+          <div class="consumer-card">
+            <div class="consumer-icon">🛒</div>
+            <h3>The Practical Shopper</h3>
+            <p>Values function over form. Looks for spacious interiors, durable materials, and versatile colours. Chooses bags that can transition from work to weekend. Brands like Coach and Longchamp resonate with their pragmatic sensibility.</p>
+            <div class="consumer-traits">
+              <span>Budget-conscious</span>
+              <span>Quality-focused</span>
+              <span>Versatile choices</span>
+            </div>
+          </div>
+          <div class="consumer-card">
+            <div class="consumer-icon">✨</div>
+            <h3>The Fashion Enthusiast</h3>
+            <p>Lives for the latest trends. Follows runway shows, fashion weeks, and influencer styling. Rotates bags seasonally and loves statement pieces. Drawn to bold designs, seasonal colours, and limited editions.</p>
+            <div class="consumer-traits">
+              <span>Trend-driven</span>
+              <span>Social media savvy</span>
+              <span>Collection builder</span>
+            </div>
+          </div>
+          <div class="consumer-card">
+            <div class="consumer-icon">👑</div>
+            <h3>The Luxury Collector</h3>
+            <p>Views bags as investments. Owns Birkins, Kellys, and limited-edition pieces. Understands craftsmanship, heritage, and resale value. For this consumer, a bag is a piece of art and a store of value.</p>
+            <div class="consumer-traits">
+              <span>Investment mindset</span>
+              <span>Heritage appreciation</span>
+              <span>Exclusive taste</span>
+            </div>
+          </div>
+          <div class="consumer-card">
+            <div class="consumer-icon">◻️</div>
+            <h3>The Minimalist</h3>
+            <p>Believes in "less is more." Gravitates toward clean lines, neutral colours, and unbranded designs. Owns fewer bags but each is carefully chosen. Brands like Bottega Veneta and The Row match their philosophy.</p>
+            <div class="consumer-traits">
+              <span>Intentional buying</span>
+              <span>Neutral palette</span>
+              <span>Quality over quantity</span>
+            </div>
+          </div>
+          <div class="consumer-card">
+            <div class="consumer-icon">🔥</div>
+            <h3>The Trendsetter</h3>
+            <p>Doesn't follow trends — they create them. First to adopt new silhouettes, unexpected colours, and emerging designers. Their bag choices often predict what everyone else will be carrying next season.</p>
+            <div class="consumer-traits">
+              <span>Early adopter</span>
+              <span>Risk taker</span>
+              <span>Style influencer</span>
+            </div>
+          </div>
+          <div class="consumer-card">
+            <div class="consumer-icon">📚</div>
+            <h3>The Student Consumer</h3>
+            <p>Balancing style with budget. Looks for affordable bags that reflect current trends. Canvas totes, crossbody bags, and trendy backpacks are staples. Values versatility, durability, and Instagram-worthy aesthetics.</p>
+            <div class="consumer-traits">
+              <span>Budget-friendly</span>
+              <span>Multi-functional</span>
+              <span>Style-conscious</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consumer Comparison Table -->
+        <div class="consumer-table-wrap" data-animate="fade-up">
+          <h3 class="subsection-title">Consumer Comparison</h3>
+          <div class="table-scroll">
+            <table class="consumer-table">
+              <thead>
+                <tr>
+                  <th>Consumer Type</th>
+                  <th>Priority</th>
+                  <th>Budget Range</th>
+                  <th>Preferred Style</th>
+                  <th>Buying Frequency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Practical Shopper</td>
+                  <td>Functionality</td>
+                  <td>Mid-range</td>
+                  <td>Versatile, neutral</td>
+                  <td>As needed</td>
+                </tr>
+                <tr>
+                  <td>Fashion Enthusiast</td>
+                  <td>Trend alignment</td>
+                  <td>Mid to High</td>
+                  <td>Seasonal, bold</td>
+                  <td>Every season</td>
+                </tr>
+                <tr>
+                  <td>Luxury Collector</td>
+                  <td>Exclusivity</td>
+                  <td>Ultra-premium</td>
+                  <td>Iconic, heritage</td>
+                  <td>Selectively</td>
+                </tr>
+                <tr>
+                  <td>Minimalist</td>
+                  <td>Simplicity</td>
+                  <td>Premium</td>
+                  <td>Clean, unbranded</td>
+                  <td>Rarely</td>
+                </tr>
+                <tr>
+                  <td>Trendsetter</td>
+                  <td>Uniqueness</td>
+                  <td>Varies</td>
+                  <td>Avant-garde</td>
+                  <td>Frequently</td>
+                </tr>
+                <tr>
+                  <td>Student</td>
+                  <td>Value</td>
+                  <td>Budget-friendly</td>
+                  <td>Trendy, practical</td>
+                  <td>Occasionally</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 9: THE FUTURE ===================== -->
+    <section id="future" class="section section-future">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-chapter-num">Chapter 08</span>
+        <h2 class="section-title">The Future of Bags</h2>
+        <p class="section-subtitle">Beyond Trends, Towards Tomorrow.</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="container">
+        <p class="section-intro-text" data-animate="fade-up">The future of fashion is being rewritten — and bags are at the forefront of this transformation. From mushroom leather to smart bags with built-in chargers, the handbag industry is evolving faster than ever. Here's what lies beyond the horizon.</p>
+
+        <div class="future-grid" data-animate="stagger-up">
+          <div class="future-card">
+            <div class="future-card-header">
+              <span class="future-icon">🌱</span>
+              <h3>Sustainable Handbags</h3>
+            </div>
+            <p>Brands are rethinking every aspect of production — from sourcing to packaging. Stella McCartney, Gabriela Hearst, and others are proving that luxury and sustainability can coexist beautifully.</p>
+          </div>
+          <div class="future-card">
+            <div class="future-card-header">
+              <span class="future-icon">♻️</span>
+              <h3>Recycled Materials</h3>
+            </div>
+            <p>Ocean plastic transformed into handbag fabric. Recycled rubber becoming bag straps. Post-consumer waste woven into luxury — the circular economy is reshaping how we think about materials.</p>
+          </div>
+          <div class="future-card">
+            <div class="future-card-header">
+              <span class="future-icon">🔄</span>
+              <h3>Upcycled Designs</h3>
+            </div>
+            <p>Vintage fabrics, deadstock materials, and deconstructed garments are finding new life as one-of-a-kind bags. Each upcycled piece carries a story of transformation and creative reimagination.</p>
+          </div>
+          <div class="future-card">
+            <div class="future-card-header">
+              <span class="future-icon">🍄</span>
+              <h3>Vegan Leather Alternatives</h3>
+            </div>
+            <p>Mycelium (mushroom) leather, cactus leather, apple leather, pineapple leather (Piñatex) — an entire ecosystem of plant-based alternatives is challenging the dominance of animal leather while pushing design innovation.</p>
+          </div>
+          <div class="future-card">
+            <div class="future-card-header">
+              <span class="future-icon">📱</span>
+              <h3>Smart Bags</h3>
+            </div>
+            <p>Built-in phone chargers, GPS tracking, LED lighting, fingerprint locks — technology is merging with fashion. Smart bags are designed for the connected, urban consumer who demands functionality from every accessory.</p>
+          </div>
+          <div class="future-card">
+            <div class="future-card-header">
+              <span class="future-icon">🎨</span>
+              <h3>Experimental Silhouettes</h3>
+            </div>
+            <p>3D-printed bags, inflatable designs, geometric structures, and sculptural forms — designers are pushing the boundaries of what a bag can look like, turning accessories into wearable art.</p>
+          </div>
+          <div class="future-card">
+            <div class="future-card-header">
+              <span class="future-icon">✍️</span>
+              <h3>Personalised Accessories</h3>
+            </div>
+            <p>Monogramming, custom colours, interchangeable straps, hand-painted artwork — personalisation allows consumers to make a bag uniquely theirs. The future is bespoke.</p>
+          </div>
+        </div>
+
+        <!-- Sustainable Bags Photo -->
+        <div class="future-editorial" data-animate="fade-up">
+          <div class="future-editorial-img">
+            <img src="/images/sustainable_bags.png" alt="Sustainable and eco-friendly bags" loading="lazy" />
+          </div>
+          <div class="future-editorial-text">
+            <h3>Responsible Fashion</h3>
+            <p>The conversation around fashion is changing. Consumers are asking harder questions: Where was this made? Who made it? What is it made from? The bags of tomorrow will not only look beautiful — they will be built on a foundation of ethical sourcing, fair labour, and environmental responsibility. The most stylish choice is becoming the most responsible one.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SPECIAL: IF BAGS WERE PERSONALITIES ===================== -->
+    <section id="personalities" class="section section-personalities">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label-special">SPECIAL FEATURE</span>
+          <h2 class="section-title">If Bags Were Personalities</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="personality-grid" data-animate="stagger-up">
+          <div class="personality-card">
+            <div class="personality-emoji">👜</div>
+            <h3>Hermès Birkin</h3>
+            <p class="personality-type">The Sophisticated One</p>
+            <p class="personality-desc">Refined, exclusive, and effortlessly commanding. Enters every room knowing its worth and never needs to announce itself.</p>
+          </div>
+          <div class="personality-card">
+            <div class="personality-emoji">🖤</div>
+            <h3>Chanel Classic Flap</h3>
+            <p class="personality-type">The Timeless Classic</p>
+            <p class="personality-desc">Elegant through every era, always appropriate, never overdone. The friend everyone can rely on for impeccable taste.</p>
+          </div>
+          <div class="personality-card">
+            <div class="personality-emoji">🔥</div>
+            <h3>Fendi Baguette</h3>
+            <p class="personality-type">The Trendsetter</p>
+            <p class="personality-desc">Bold, playful, and pop-culture savvy. Always the first to arrive at the party and the last to leave.</p>
+          </div>
+          <div class="personality-card">
+            <div class="personality-emoji">✈️</div>
+            <h3>Louis Vuitton Speedy</h3>
+            <p class="personality-type">The Travel Lover</p>
+            <p class="personality-desc">Adventurous, curious, and endlessly adaptable. Equally at home in Parisian cafés and bustling city streets.</p>
+          </div>
+          <div class="personality-card">
+            <div class="personality-emoji">🌿</div>
+            <h3>Gucci Jackie</h3>
+            <p class="personality-type">The Effortlessly Chic One</p>
+            <p class="personality-desc">Understated, graceful, and quietly confident. Doesn't follow trends because authenticity is their true accessory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SPECIAL: THE BAG DIARY ===================== -->
+    <section id="bag-diary" class="section section-bag-diary">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-label-special">EDITORIAL</span>
+          <h2 class="section-title">The Bag Diary</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="diary-grid" data-animate="stagger-up">
+          <div class="diary-card diary-card-large">
+            <img src="/images/bag_diary_1.png" alt="Street style editorial" loading="lazy" />
+            <div class="diary-caption">
+              <p>"Some bags are carried. Others carry moments."</p>
+            </div>
+          </div>
+          <div class="diary-card">
+            <img src="/images/bag_diary_2.png" alt="Bag craftsmanship detail" loading="lazy" />
+            <div class="diary-caption">
+              <p>"In every stitch, a story. In every clasp, a commitment to beauty."</p>
+            </div>
+          </div>
+          <div class="diary-card">
+            <img src="/images/personality_bags.png" alt="Luxury bag collection" loading="lazy" />
+            <div class="diary-caption">
+              <p>"A bag is a silent introduction — before you speak, it has already said everything."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE 10: THE FINAL CHAPTER ===================== -->
+    <section id="finale" class="section section-finale">
+      <div class="finale-bg">
+        <img src="/images/closing_editorial.png" alt="A beautiful bag by the window" class="finale-bg-img" />
+        <div class="finale-overlay"></div>
+      </div>
+      <div class="finale-content">
+        <div class="container">
+          <div class="finale-text" data-animate="fade-up">
+            <span class="section-chapter-num">The Final Chapter</span>
+            <h2 class="finale-title">Every Bag Tells a Story</h2>
+
+            <div class="finale-body">
+              <p>From a simple pouch to the iconic Birkin, bags have travelled through centuries of changing lifestyles and fashion movements.</p>
+              <p>They have become symbols of luxury, expressions of creativity and companions in our everyday lives.</p>
+              <p>Some bags hold our essentials, some hold our memories, and some become timeless pieces that remain in our wardrobes for years.</p>
+              <p>Perhaps the beauty of a bag lies in its ability to be both practical and personal.</p>
+            </div>
+
+            <div class="finale-quote">
+              <blockquote>"Fashion changes, trends fade, but a truly iconic bag always finds its way back into the story."</blockquote>
+            </div>
+
+            <div class="finale-signature">
+              <div class="finale-sig-logo">THE BAG EDIT</div>
+              <div class="finale-sig-tagline">Carry Your Story. Define Your Style.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">THE BAG EDIT</div>
+            <p class="footer-tagline">Carrying Stories, Creating Statements.</p>
+          </div>
+          <div class="footer-nav">
+            <h4>Chapters</h4>
+            <ul>
+              <li><a href="#history">Once Upon a Bag</a></li>
+              <li><a href="#dictionary">The Bag Dictionary</a></li>
+              <li><a href="#materials">The Material Story</a></li>
+              <li><a href="#hall-of-fame">Hall of Fame</a></li>
+              <li><a href="#brands">The Brands</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h4>More</h4>
+            <ul>
+              <li><a href="#indian">Desi Craft</a></li>
+              <li><a href="#consumer">The Consumer</a></li>
+              <li><a href="#future">Future of Bags</a></li>
+              <li><a href="#personalities">Bag Personalities</a></li>
+              <li><a href="#bag-diary">The Bag Diary</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="footer-social-links">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="Pinterest">Pinterest</a>
+              <a href="#" aria-label="Twitter">Twitter / X</a>
+              <a href="#" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 THE BAG EDIT. A Fashion Editorial Experience.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Glossary Modal -->
+    <div class="glossary-modal" id="glossary-modal">
+      <div class="glossary-modal-content">
+        <button class="glossary-close" id="glossary-close">&times;</button>
+        <h2>Fashion Vocabulary Glossary</h2>
+        <div class="glossary-list" id="glossary-list">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
