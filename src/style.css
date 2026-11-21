@@ -2403,7 +2403,11 @@ img[src$="consumer_fashion.png"] {
   }
 
   .bag-dict-img-wrap {
-    height: 220px;
+    height: 180px;
+  }
+
+  .bag-dict-img-wrap img {
+    object-fit: contain;
   }
 
   .brands-grid {
@@ -2466,7 +2470,7 @@ img[src$="consumer_fashion.png"] {
   }
 
   .bag-dict-img-wrap {
-    height: 220px;
+    height: 160px;
   }
 
   .hof-img-wrap {
