@@ -2502,3 +2502,34 @@ img[src$="consumer_fashion.png"] {
     transform: none;
   }
 }
+
+@media (max-width: 768px) {
+  /* Stack the hero: text on top, image below (or vice versa) instead of a side-by-side split */
+  .section-hero {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero-content {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Stop "Consumer" from being clipped */
+  .section-hero-title {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    line-height: 1.15;
+    overflow-wrap: break-word;
+    word-break: normal;
+    max-width: 100%;
+  }
+
+  .section-hero-subtitle {
+    font-size: clamp(1rem, 4.5vw, 1.4rem);
+    padding: 0 0.5rem;
+  }
+}
