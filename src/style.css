@@ -2402,6 +2402,10 @@ img[src$="consumer_fashion.png"] {
     grid-template-columns: 1fr;
   }
 
+  .bag-dict-img-wrap {
+    height: 220px;
+  }
+
   .brands-grid {
     grid-template-columns: 1fr;
   }

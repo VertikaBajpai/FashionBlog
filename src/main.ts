@@ -30,8 +30,7 @@ const glossaryData = [
 
 // ---- Search Data ----
 const searchData = [
-  { title: 'Once Upon a Bag — History & Evolution', section: 'History', href: '#history' },
-  { title: 'Reticule — The First Fashion Handbag', section: 'History', href: '#history' },
+
   { title: 'The Bag Dictionary — Types & Silhouettes', section: 'Dictionary', href: '#dictionary' },
   { title: 'Tote Bag — The Ultimate Carry-All', section: 'Dictionary', href: '#bag-tote' },
   { title: 'Shoulder Bag — The Hands-Free Classic', section: 'Dictionary', href: '#bag-shoulder' },
